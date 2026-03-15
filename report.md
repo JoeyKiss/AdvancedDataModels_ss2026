@@ -62,13 +62,13 @@ Students are encouraged to use AI coding assistants (e.g., ChatGPT, Claude Code,
 - Suggest sample queries, code snippets or Docker commands.
 - Generate sample data or embeddings.
 - Help debug configuration issues.
-- Create visualizations of graph or time‑series data.
+- Create visualizations.
 
-However, **AI assistance must never replace understanding**.  Students must explain why each query works, how the data model supports it, and what trade‑offs are involved.  The instructor may ask conceptual questions during or after the presentation, and students should demonstrate that they comprehend the underlying concepts and not just copy code.
+However, **AI assistance must never replace understanding**.  Students must explain why what they did works, how the data model supports it, and what trade‑offs are involved.  Students should demonstrate that they comprehend the underlying concepts and not just copy code.
 
 ## 6. Student Lecture Structure
 
-Each 90‑minute seminar follows a consistent template:
+Each 90‑minute presentation should roughly follow the following structure:
 
 1. **Motivation (10 min)** – Introduce the data model and explain why it was developed.  Relate to AI use cases (e.g., graph models for recommendations).
 2. **Conceptual model (10 min)** – Describe the core data structures (nodes/edges, triples, vectors, documents, key–value pairs, columns, data lake objects).  Use diagrams and analogies.
@@ -105,9 +105,9 @@ A simple, reliable infrastructure is essential.  We recommend each group uses a 
 - **Notebooks** (optional) in a `/notebooks` directory for interactive experiments.
 - **Reports** or supplementary documents in a `/docs` directory.
 
-GitLab is a great option as it’s built‑in CI/CD can be used to build Docker images or run unit tests.  GitLab Pages allows groups to host their slides or demo dashboards.  Groups should use issues and milestones to track tasks and ensure collaboration.  For coding, students can use Jupyter notebooks locally or in simple cloud services (e.g., free tiers of Google Colab) but must upload final notebooks into the repository.
+GitLab is a great option as it’s built‑in CI/CD can be used to build Docker images or run unit tests.  GitLab Pages allows groups to host their slides or demo dashboards.  Groups are recommended to use issues and milestones to track tasks and ensure collaboration.  For coding, students can use Jupyter notebooks locally or in simple cloud services (e.g., free tiers of [Google Colab](https://colab.research.google.com)) but must upload or link final notebooks into the repository.
 
-## 9. Recommended GitLab Repository Structure
+## 9. Recommended Git Repository Structure
 
 ```
 /README.md        – overview, objectives, setup, instructions
@@ -122,19 +122,19 @@ GitLab is a great option as it’s built‑in CI/CD can be used to build Docker 
 /LICENSE          – open‑source license for the repository
 ```
 
-This structure keeps materials organized and makes it easy for the instructor and peers to evaluate work.
+This structure keeps materials organized and makes it easy for me and peers to evaluate your work.
 
 ## 10. Student Workflow
 
 1. **Formation & topic assignment** – In week 1 students form groups (2–3 members) and are assigned a data model.
 2. **Deep reading** – Students read the assigned papers/chapters and explore documentation.  They identify key concepts and discuss them within the group.
 3. **Planning** – Groups plan their lecture; decide on demo scope and interactive activity; divide tasks.
-4. **Environment setup** – Install or deploy the chosen open‑source tool (via Docker).  Load a sample dataset and experiment with queries.
+4. **Environment setup** – Install or deploy the chosen open‑source tool.  Load a sample dataset and experiment with queries.
 5. **Demo development** – Build a small application or notebook demonstrating the practical benefits of the data model.  Test performance and prepare visualizations.
 6. **Prepare slides** – Create an engaging presentation covering conceptual and practical aspects.  Integrate diagrams, charts and code snippets.  Practice explaining queries and answering questions.
 7. **Interactive activity design** – Develop exercise materials for classmates and prepare instructions.  Ensure that needed software is accessible to participants.
 8. **Repository completion** – Commit all materials to your repository following the recommended structure.  Include instructions in `README.md` for reproducing the demo.
-9. **Presentation** – Deliver the 90‑minute lecture, run the demo live, facilitate the activity, and answer questions.
+9. **Presentation** – Deliver the 90‑minute lecture including the demo live, facilitate the activity, and answer questions.
 10. **Reflection** – After the seminar, write a short reflection (1–2 pages) on what was learned, challenges faced, and how the data model can be applied in the real world.
 
 ## 11. Evaluation Rubric
@@ -142,7 +142,7 @@ This structure keeps materials organized and makes it easy for the instructor an
 | Criterion | Weight | Description |
 |---|---|---|
 | **Conceptual understanding** | 25 % | Clear explanation of core concepts, data structures and query models; ability to answer questions and relate concepts to AI use cases. |
-| **Lecture organization & clarity** | 15 % | Logical flow following the template; effective use of visuals and examples; adherence to time. |
+| **Lecture organization & clarity** | 15 % | Logical flow; effective use of visuals and examples; adherence to time. |
 | **Demo quality & relevance** | 20 % | Demonstration showcases a realistic use case; runs smoothly; highlights advantages of the data model. |
 | **Interactive activity** | 10 % | Activity engages classmates and reinforces learning; instructions are clear; fosters discussion or problem‑solving. |
 | **Practical feasibility** | 10 % | Use of accessible, open‑source tools; repository completeness; reproducibility of the demo on student laptops. |
