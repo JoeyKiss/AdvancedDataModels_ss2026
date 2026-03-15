@@ -96,7 +96,7 @@ To maintain a **student‑driven seminar**, each group should plan at least one 
 
 ## 8. Student Infrastructure
 
-A simple, reliable infrastructure is essential.  We recommend each group uses a **GitLab repository** as a central collaboration space.  The repository should host:
+A simple, reliable infrastructure is essential.  We recommend each group uses a **Git repository** as a central collaboration space.  The repository should host:
 
 - **README.md** with an overview, setup instructions, and dependencies.
 - **Slides** (PowerPoint or PDF) in a `/slides` directory.
@@ -105,7 +105,7 @@ A simple, reliable infrastructure is essential.  We recommend each group uses a 
 - **Notebooks** (optional) in a `/notebooks` directory for interactive experiments.
 - **Reports** or supplementary documents in a `/docs` directory.
 
-GitLab’s built‑in CI/CD can be used to build Docker images or run unit tests.  GitLab Pages allows groups to host their slides or demo dashboards.  Groups should use issues and milestones to track tasks and ensure collaboration.  For coding, students can use Jupyter notebooks locally or in simple cloud services (e.g., free tiers of Google Colab) but must upload final notebooks into the repository.
+GitLab is a great option as it’s built‑in CI/CD can be used to build Docker images or run unit tests.  GitLab Pages allows groups to host their slides or demo dashboards.  Groups should use issues and milestones to track tasks and ensure collaboration.  For coding, students can use Jupyter notebooks locally or in simple cloud services (e.g., free tiers of Google Colab) but must upload final notebooks into the repository.
 
 ## 9. Recommended GitLab Repository Structure
 
