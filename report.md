@@ -1,6 +1,6 @@
 # Advanced Data Models Seminar Course Design
 
-![Seminar cover image]({{file:IMAGE_PLACEHOLDER}})
+![Seminar cover image](ec7f73fb-7d2a-4bdc-b3d2-88d21943619e.png)
 
 ## 1. Course Philosophy
 
@@ -124,45 +124,26 @@ GitLab is a great option as it’s built‑in CI/CD can be used to build Docker 
 
 This structure keeps materials organized and makes it easy for the instructor and peers to evaluate work.
 
-## 10. Instructor Support Materials
-
-To facilitate student success, the instructor should prepare:
-
-- **Starter repository template** on GitLab with the above structure, a skeleton `README.md`, and sample Docker Compose files for each data model.
-
-- **Reading list** containing core papers, book chapters and articles (see above suggestions).  Provide links to accessible sources and optional advanced readings.
-
-- **Evaluation rubric** (see below) to set expectations for grading.
-
-- **Lecture template** (e.g., PowerPoint) matching the 90‑minute structure.
-
-- **Example datasets** (e.g., small social network, product catalog, text corpus) that can be used for demos.
-
-- **Setup instructions** for each open‑source tool, including Docker commands and system requirements.  Provide guidance on using free‑tier cloud services if necessary.
-
-- **Office hours** or lab sessions to help groups debug environment issues.
-
-## 11. Student Workflow
+## 10. Student Workflow
 
 1. **Formation & topic assignment** – In week 1 students form groups (2–3 members) and are assigned a data model.
 2. **Deep reading** – Students read the assigned papers/chapters and explore documentation.  They identify key concepts and discuss them within the group.
-3. **Planning** – Groups plan their lecture using the provided template; decide on demo scope and interactive activity; divide tasks.
+3. **Planning** – Groups plan their lecture; decide on demo scope and interactive activity; divide tasks.
 4. **Environment setup** – Install or deploy the chosen open‑source tool (via Docker).  Load a sample dataset and experiment with queries.
 5. **Demo development** – Build a small application or notebook demonstrating the practical benefits of the data model.  Test performance and prepare visualizations.
 6. **Prepare slides** – Create an engaging presentation covering conceptual and practical aspects.  Integrate diagrams, charts and code snippets.  Practice explaining queries and answering questions.
 7. **Interactive activity design** – Develop exercise materials for classmates and prepare instructions.  Ensure that needed software is accessible to participants.
-8. **Repository completion** – Commit all materials to the GitLab repository following the recommended structure.  Include instructions in `README.md` for reproducing the demo.
-9. **Dry run & feedback** – Conduct a rehearsal with peers or the instructor to receive feedback and make adjustments.
-10. **Presentation** – Deliver the 90‑minute lecture, run the demo live, facilitate the activity, and answer questions.
-11. **Reflection** – After the seminar, write a short reflection (1–2 pages) on what was learned, challenges faced, and how the data model can be applied in AI systems.
+8. **Repository completion** – Commit all materials to your repository following the recommended structure.  Include instructions in `README.md` for reproducing the demo.
+9. **Presentation** – Deliver the 90‑minute lecture, run the demo live, facilitate the activity, and answer questions.
+10. **Reflection** – After the seminar, write a short reflection (1–2 pages) on what was learned, challenges faced, and how the data model can be applied in the real world.
 
-## 12. Evaluation Rubric
+## 11. Evaluation Rubric
 
 | Criterion | Weight | Description |
 |---|---|---|
 | **Conceptual understanding** | 25 % | Clear explanation of core concepts, data structures and query models; ability to answer questions and relate concepts to AI use cases. |
 | **Lecture organization & clarity** | 15 % | Logical flow following the template; effective use of visuals and examples; adherence to time. |
-| **Demo quality & relevance** | 20 % | Demonstration showcases a realistic use case; runs smoothly on provided infrastructure; highlights advantages of the data model; includes meaningful analysis or metrics. |
+| **Demo quality & relevance** | 20 % | Demonstration showcases a realistic use case; runs smoothly; highlights advantages of the data model. |
 | **Interactive activity** | 10 % | Activity engages classmates and reinforces learning; instructions are clear; fosters discussion or problem‑solving. |
 | **Practical feasibility** | 10 % | Use of accessible, open‑source tools; repository completeness; reproducibility of the demo on student laptops. |
 | **Collaboration & participation** | 10 % | Evidence of teamwork (commits from all members), responsiveness during Q&A, participation in other groups’ seminars. |
@@ -170,9 +151,9 @@ To facilitate student success, the instructor should prepare:
 
 ### Note on Participation
 
-Attendance and active participation in other groups’ sessions are crucial.  Students should ask questions, contribute to discussions, and engage in peer evaluations.  The instructor can assign a small portion of the grade to peer feedback.
+Attendance and active participation in other groups’ sessions are crucial.  Students should ask questions, contribute to discussions, and engage in peer evaluations.
 
-## 13. Optional Extensions
+## 12. Optional Extensions
 
 - **Multi‑model databases** – Explore systems that combine several data models (e.g., ArangoDB or Dgraph) and discuss how hybrid approaches can support AI pipelines.
 
@@ -183,6 +164,3 @@ Attendance and active participation in other groups’ sessions are crucial.  St
 - **Ethics and data governance** – Discuss ethical considerations, bias and data quality issues arising from different data models.  Evaluate how explainability and governance are impacted by model choice.
 
 - **Emerging models** – Briefly survey new directions such as **time‑series databases**, **graph neural network databases**, or **vector‑graph hybrids**.  Encourage students to propose research topics.
-
-By following this design, the **Advanced Data Models** seminar will give students practical skills and conceptual depth necessary to architect data‑centric AI systems.  They will learn to select the right data model for a given problem and articulate why structure and semantics are essential for scalable and explainable AI.
-
