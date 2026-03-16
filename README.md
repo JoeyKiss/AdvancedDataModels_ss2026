@@ -1,6 +1,6 @@
-# Advanced Data Models Seminar – Summer Semester 2026
+# Advanced Data Models – Summer Semester 2026
 
-This repository contains materials for the **Advanced Data Models** seminar (SS2026) at the Applied University Esslingen.  The course explores modern data models beyond traditional relational systems and their role in building scalable, AI‑ready architectures.
+This repository contains materials for the **Advanced Data Models** lecture (SS2026) at the Applied University Esslingen.  The course explores modern data models beyond traditional relational systems and their role in building scalable, AI‑ready architectures.
 
 ## Repository structure
 
