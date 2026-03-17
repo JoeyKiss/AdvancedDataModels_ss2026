@@ -68,17 +68,17 @@ However, **AI assistance must never replace understanding**.  Students must expl
 
 ## 6. Student Lecture Structure
 
-Each 90‑minute presentation should roughly follow the following structure:
+Each presentation should be followed by a demo and roughly follow the following structure:
 
 1. **Motivation (10 min)** – Introduce the data model and explain why it was developed.  Relate to AI use cases (e.g., graph models for recommendations).
-2. **Conceptual model (10 min)** – Describe the core data structures (nodes/edges, triples, vectors, documents, key–value pairs, columns, data lake objects).  Use diagrams and analogies.
-3. **Data structure (10 min)** – Show how data are stored physically and logically.  Discuss schema flexibility or constraints.
-4. **Query model (10 min)** – Introduce the query language (Cypher, SPARQL, ANN API, MongoDB queries, Redis commands, CQL, Spark SQL).  Explain how queries differ from SQL.
-5. **Architecture overview (10 min)** – Outline how the system is deployed (single node vs. distributed, replication, partitioning).  Mention open‑source tools and cloud options.
+2. **Conceptual model (15 min)** – Describe the core data structures (nodes/edges, triples, vectors, documents, key–value pairs, columns, data lake objects).  Use diagrams and analogies.
+3. **Data structure (15 min)** – Show how data are stored physically and logically.  Discuss schema flexibility or constraints.
+4. **Query model (15 min)** – Introduce the query language (Cypher, SPARQL, ANN API, MongoDB queries, Redis commands, CQL, Spark SQL).  Explain how queries differ from SQL.
+5. **Architecture overview (15 min)** – Outline how the system is deployed (single node vs. distributed, replication, partitioning).  Mention open‑source tools and cloud options.
 6. **Comparison to relational databases (10 min)** – Highlight differences in data model, schema flexibility, scalability and performance.
-7. **Practical demo (20 min)** – Run the prepared demo, showcasing data loading, querying and analytics.  Visualize results and discuss performance observations.
-8. **Interactive class activity (10 min)** – Engage classmates with exercises (query writing, schema design) or debates on trade‑offs.
-9. **Discussion (10 min)** – Facilitate an open discussion on strengths, weaknesses and AI applications of the model.  Encourage questions.
+7. **Practical demo (30 min)** – Run the prepared demo, showcasing data loading, querying and analytics.  Visualize results and discuss performance observations.
+8. **Interactive class activity (20 min)** – Engage classmates with exercises (query writing, schema design) or debates on trade‑offs.
+10. **Discussion (10 min)** – Facilitate an open discussion on strengths, weaknesses and AI applications of the model.  Encourage questions.
 
 ## 7. Interactive Activities
 
@@ -134,7 +134,7 @@ This structure keeps materials organized and makes it easy for me and peers to e
 6. **Prepare slides** – Create an engaging presentation covering conceptual and practical aspects.  Integrate diagrams, charts and code snippets.  Practice explaining queries and answering questions.
 7. **Interactive activity design** – Develop exercise materials for classmates and prepare instructions.  Ensure that needed software is accessible to participants.
 8. **Repository completion** – Commit all materials to your repository following the recommended structure.  Include instructions in `README.md` for reproducing the demo.
-9. **Presentation** – Deliver the 90‑minute lecture including the demo live, facilitate the activity, and answer questions.
+9. **Presentation** – Deliver the lecture including the demo live, facilitate the activity, and answer questions.
 10. **Reflection** – After the seminar, write a short reflection (1–2 pages) on what was learned, challenges faced, and how the data model can be applied in the real world.
 
 ## 11. Evaluation Rubric
