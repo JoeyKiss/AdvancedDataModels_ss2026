@@ -15,11 +15,11 @@ This course frames **data modeling as a cornerstone of AI engineering**.  You wi
 | **1** | Instructor‑led introduction | **Course overview** — why data modeling matters for AI, relational vs. non‑relational paradigms, lecture format and expectations.  Groups and topics are assigned. | Align on philosophy and logistics. |
 | **2** | Seminar | **Graph databases** (Group 1) | Lead a lecture on graph data models, traverse queries and use cases.  Hands‑on demo using an open‑source graph DB. |
 | **3** | Seminar | **Semantic triple stores / RDF + SPARQL** (Group 2) | Lecture on RDF triples, ontologies and SPARQL queries.  Demo using Jena Fuseki or GraphDB. |
-| **4** | Seminar | **Vector databases** (Group 3) | Explain vector embeddings and approximate nearest‑neighbour search.  Demo using open‑source vector DB (e.g., Milvus or FAISS). |
+| **4** | Seminar | **Vector databases** (Group 3) | Explain vector embeddings and approximate nearest‑neighbour search.  Demo using ChromaDB or Qdrant. |
 | **5** | Seminar | **Document stores** (Group 4) | Cover document‑oriented models and flexible schemas.  Demo using MongoDB Community Edition or FerretDB. |
-| **6** | Seminar | **Key‑value stores** (Group 5) | Discuss simple key–value pairs and high‑performance caching.  Demo using Redis. |
+| **6** | Seminar | **Key‑value stores** (Group 5) | Discuss simple key–value pairs and high‑performance caching.  Demo using Redis or Valkey. |
 | **7** | Seminar | **Wide‑column databases** (Group 6) | Examine column‑family stores and horizontal scalability.  Demo using Apache Cassandra or HBase. |
-| **8** | Seminar | **Data lakes** (Group 7) | Present data lake architecture and lakehouses.  Demo using Delta Lake with a simple local storage. |
+| **8** | Seminar | **Data lakes** (Group 7) | Present data lake architecture and lakehouses.  Demo using DuckDB with Delta Lake / Parquet. |
 | **9** | Integration & reflection | **Comparisons and synthesis** — groups discuss cross‑model similarities, trade‑offs and how to combine models in AI pipelines.  Instructor facilitates debate on RAG, knowledge graphs and lakehouses. | Encourage holistic understanding and critical thinking. |
 | **10** | Final reflection & evaluation | **Student presentations & future directions** — each group reflects on their learning, discusses AI implications and receives feedback. | Consolidate lessons and evaluate outcomes. |
 
@@ -51,17 +51,17 @@ Each group must prepare a **runnable demo** showing how their data model solves 
 
 - **Graph database demo** – Use Neo4j (community edition) or the open‑source Neo4j Desktop.  Import a small dataset (e.g., movie actors or citation networks) and implement a recommendation algorithm using Cypher queries.  Visualize node/edge relationships and show multi‑hop traversals to answer questions like *“Which movies are connected through common actors?”*.  Highlight how graph traversal is faster than complex joins.
 
-- **Semantic triple store demo** – Use Apache Jena TDB with Fuseki server.  Load a subset of DBpedia or a custom ontology encoded in RDF.  Write SPARQL queries to retrieve relationships (e.g., *“find all universities located in Germany and their notable alumni”*).  Demonstrate federated queries or reasoning by adding a simple ontology and using Jena’s inference engine.
+- **Semantic triple store demo** – Use Apache Jena TDB with Fuseki server (Docker) or Oxigraph (lightweight Rust‑based alternative, no JVM required).  Load a subset of DBpedia or a custom ontology encoded in RDF.  Write SPARQL queries to retrieve relationships (e.g., *“find all universities located in Germany and their notable alumni”*).  Demonstrate federated queries or reasoning by adding a simple ontology and using Jena’s inference engine.
 
-- **Vector database demo** – Use Milvus (open‑source) or FAISS (library) wrapped in a simple REST API.  Generate sentence embeddings for a corpus using HuggingFace’s sentence‑transformers.  Insert vectors into the database; implement a semantic search endpoint that returns the most similar sentences to a query.  Compare search performance with brute‑force search and discuss approximate nearest‑neighbour algorithms.
+- **Vector database demo** – Use ChromaDB (`pip install chromadb`, embedded) or Qdrant (Docker with web dashboard).  Generate sentence embeddings for a corpus using HuggingFace’s sentence‑transformers.  Insert vectors into the database; implement a semantic search endpoint that returns the most similar sentences to a query.  Optionally compare with FAISS for algorithm‑level understanding of approximate nearest‑neighbour search.
 
 - **Document store demo** – Install MongoDB Community Edition or FerretDB (purely open source).  Design a flexible product catalog where each product has different attributes (size, colour, metadata).  Use the MongoDB shell or drivers to insert, update and query nested documents.  Show that new fields can be added without schema migrations and highlight indexing on nested fields.
 
-- **Key‑value store demo** – Use Redis (open source).  Build a caching layer for a simple web service: store page contents or user session data as key–value pairs, set expiration times, and demonstrate how retrieval bypasses slower storage.  Show replication by running two Redis instances and enabling master‑replica replication.  Discuss partitioning and scaling options.
+- **Key‑value store demo** – Use Redis (AGPLv3) or Valkey (BSD‑licensed drop‑in alternative).  Build a caching layer for a simple web service: store page contents or user session data as key–value pairs, set expiration times, and demonstrate how retrieval bypasses slower storage.  Show replication by running two Redis instances and enabling master‑replica replication.  Discuss partitioning and scaling options.
 
-- **Wide‑column demo** – Use Apache Cassandra in a single‑node Docker container (or on a cluster of two nodes).  Model IoT sensor data with a partition key on sensor ID and clustering columns on timestamp.  Write queries to fetch recent sensor readings, and illustrate how adding nodes increases capacity and throughput.
+- **Wide‑column demo** – Use Apache Cassandra in a single‑node Docker container (set `MAX_HEAP_SIZE=512M` and `HEAP_NEWSIZE=128M` to keep memory usage reasonable on student laptops).  Model IoT sensor data with a partition key on sensor ID and clustering columns on timestamp.  Write queries to fetch recent sensor readings, and illustrate how adding nodes increases capacity and throughput.
 
-- **Data lake demo** – Use Delta Lake with Apache Spark.  Set up a small data lake in a local directory or on a cloud bucket.  Ingest raw CSV/JSON logs; convert them to Delta format; run SQL queries for analytics; show versioning and ACID transactions.  Discuss how data lakes store raw data in native formats, enabling machine‑learning workloads while also addressing governance challenges.
+- **Data lake demo** – Use DuckDB (`pip install duckdb`, no Docker or JVM required) with its Delta Lake and Parquet extensions.  Ingest raw CSV/JSON files; convert them to Parquet or Delta format; run SQL queries for analytics; demonstrate ACID transactions, versioning and time‑travel queries.  Discuss how data lakes store raw data in open formats enabling machine‑learning workloads.  Note that Apache Spark is the typical production‑scale engine for Delta Lake, while DuckDB provides the same concepts in a lightweight package.
 
 ## 5. AI‑Assisted Development
 
@@ -81,7 +81,7 @@ Each lecture session is 180 minutes.  The structured content below totals appro
 1. **Motivation (10 min)** – Introduce the data model and explain why it was developed.  Relate to AI use cases (e.g., graph models for recommendations).
 2. **Conceptual model (15 min)** – Describe the core data structures (nodes/edges, triples, vectors, documents, key–value pairs, columns, data lake objects).  Use diagrams and analogies.
 3. **Data structure (15 min)** – Show how data are stored physically and logically.  Discuss schema flexibility or constraints.
-4. **Query model (15 min)** – Introduce the query language (Cypher, SPARQL, ANN API, MongoDB queries, Redis commands, CQL, Spark SQL).  Explain how queries differ from SQL.
+4. **Query model (15 min)** – Introduce the query language (Cypher, SPARQL, ANN API, MongoDB queries, Redis commands, CQL, DuckDB SQL).  Explain how queries differ from SQL.
 5. **Architecture overview (15 min)** – Outline how the system is deployed (single node vs. distributed, replication, partitioning).  Mention open‑source tools and cloud options.
 6. **Comparison to relational databases (10 min)** – Highlight differences in data model, schema flexibility, scalability and performance.
 7. **Practical demo (30 min)** – Run the prepared demo, showcasing data loading, querying and analytics.  Visualize results and discuss performance observations.

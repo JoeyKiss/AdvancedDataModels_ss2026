@@ -11,7 +11,7 @@ This repository contains materials for the **Advanced Data Models** lecture (SS2
 
 - Form groups of 2‑3 students and select a topic (graph databases, triple stores, vector databases, document stores, key‑value stores, wide‑column stores or data lakes).
 - Deeply study the assigned paper or chapter, prepare your 180‑minute lecture using the template provided in `report.md`, and design an interactive activity and practical demo.
-- Use open‑source or free‑tier tools that run on student laptops (e.g. Neo4j, Apache Jena, Milvus, MongoDB, Redis, Cassandra, Delta Lake).  Docker setup is encouraged.
+- Use open‑source or free‑tier tools that run on student laptops (e.g. Neo4j, Apache Jena, ChromaDB, MongoDB, Redis, Cassandra, DuckDB).  Docker setup is encouraged.
 - AI coding assistants (ChatGPT, Codex, Claude) may be used to accelerate code development, but every student must understand and be able to explain what their code does.
 - Commit all your materials (slides, demo scripts, data, notebooks) to your group directory in this repository and be prepared to explain your design decisions during your lecture.
 
