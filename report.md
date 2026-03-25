@@ -1,6 +1,6 @@
 # Advanced Data Models – Lecture Guide
 
-![Course cover image](cover.png)
+![Course cover image](cover.jpg)
 
 ## 1. Course Philosophy
 
@@ -74,7 +74,7 @@ You are encouraged to use AI coding assistants (e.g., ChatGPT, Claude Code, Code
 
 However, **AI assistance must never replace understanding**.  You must be able to explain why what you did works, how the data model supports it, and what trade‑offs are involved.  Demonstrate that you comprehend the underlying concepts and not just copy code.
 
-## 6. Student Lecture Structure
+## 6. Lecture Structure
 
 Each lecture session is 180 minutes.  The structured content below totals approximately 140 minutes; the remaining time accommodates two short breaks (10 minutes each) and a buffer for Q&A overflow.  Each presentation should roughly follow the following structure:
 
@@ -90,7 +90,7 @@ Each lecture session is 180 minutes.  The structured content below totals appro
 
 ## 7. Interactive Activities
 
-To maintain a **student‑driven seminar**, each group should plan at least one interactive activity.  Suggestions include:
+To maintain a **student‑driven lecture**, each group should plan at least one interactive activity.  Suggestions include:
 
 - **Live query writing** – Provide classmates with a query prompt and have them write and run queries on the demo database (e.g., find shortest path between two nodes in Neo4j, craft a SPARQL query to extract a subgraph).
 
@@ -102,27 +102,15 @@ To maintain a **student‑driven seminar**, each group should plan at least one 
 
 - **Small group challenge** – Assign mini‑projects where groups design a micro‑service using the presented data model, write a simple API and benchmark queries.
 
-## 8. Student Infrastructure
+## 8. Infrastructure & Group Directory Structure
 
 All groups work in a **single shared Git repository**.  Each group has its own subdirectory under `groups/` where all deliverables are committed.  This makes it easy for the instructor and your peers to review, compare and evaluate everyone’s work in one place.
-
-Your group directory should contain:
-
-- **README.md** with an overview, setup instructions, and dependencies.
-- **Slides** (PowerPoint or PDF) in a `slides/` directory.
-- **Demo code** in a `demo/` directory, containing Dockerfiles, scripts and source code.
-- **Data** sets or links in a `data/` directory.
-- **Notebooks** (optional) in a `notebooks/` directory for interactive experiments.
-
-Use issues and milestones to track tasks and coordinate within your group.  For coding, you can use Jupyter notebooks locally or in simple cloud services (e.g., free tiers of [Google Colab](https://colab.research.google.com)) but must upload or link final notebooks into the repository.
-
-## 9. Group Directory Structure
 
 Each group directory follows this layout:
 
 ```
 groups/group1-graph-databases/
-    README.md       – overview, objectives, setup instructions
+    README.md       – overview, objectives, setup instructions, dependencies
     slides/         – presentation files (PDF/PPTX)
     demo/
         Dockerfile  – defines environment
@@ -132,9 +120,9 @@ groups/group1-graph-databases/
     notebooks/      – Jupyter notebooks used in preparation or demonstration
 ```
 
-This structure keeps materials organized and makes it easy for the instructor and your peers to evaluate your work.
+Use issues and milestones to track tasks and coordinate within your group.  For coding, you can use Jupyter notebooks locally or in simple cloud services (e.g., free tiers of [Google Colab](https://colab.research.google.com)) but must upload or link final notebooks into the repository.
 
-## 10. Student Workflow
+## 9. Student Workflow
 
 1. **Formation & topic assignment** – In week 1 you form groups (2–3 members) and are assigned a data model.
 2. **Deep reading** – Read the assigned papers/chapters and explore documentation.  Identify key concepts and discuss them within your group.
@@ -147,7 +135,7 @@ This structure keeps materials organized and makes it easy for the instructor an
 9. **Presentation** – Deliver the lecture including the demo live, facilitate the activity, and answer questions.
 10. **Reflection** – After the lecture, write a short reflection (1–2 pages) on what you learned, challenges you faced, and how the data model can be applied in the real world.
 
-## 11. Evaluation Rubric
+## 10. Evaluation Rubric
 
 | Criterion | Weight | Description |
 |---|---|---|
@@ -156,14 +144,14 @@ This structure keeps materials organized and makes it easy for the instructor an
 | **Demo quality & relevance** | 20 % | Demonstration showcases a realistic use case; runs smoothly; highlights advantages of the data model. |
 | **Interactive activity** | 10 % | Activity engages classmates and reinforces learning; instructions are clear; fosters discussion or problem‑solving. |
 | **Practical feasibility** | 10 % | Use of accessible, open‑source tools; repository completeness; reproducibility of the demo on student laptops. |
-| **Collaboration & participation** | 10 % | Evidence of teamwork (commits from all members), responsiveness during Q&A, participation in other groups’ seminars. |
+| **Collaboration & participation** | 10 % | Evidence of teamwork (commits from all members), responsiveness during Q&A, participation in other groups’ lectures. |
 | **Reflection and synthesis** | 10 % | Post‑presentation reflection demonstrates critical thinking, identifies trade‑offs and connections between data models, and proposes future directions.
 
 ### Note on Participation
 
 Attendance and active participation in other groups’ sessions are crucial.  Ask questions, contribute to discussions, and engage in peer evaluations.
 
-## 12. Optional Extensions
+## 11. Optional Extensions
 
 If you want to go beyond the core topics, consider exploring one of the following areas as part of your reflection or as a bonus discussion during your lecture:
 
