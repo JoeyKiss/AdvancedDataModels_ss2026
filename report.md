@@ -104,30 +104,32 @@ To maintain a **student‑driven seminar**, each group should plan at least one 
 
 ## 8. Student Infrastructure
 
-A simple, reliable infrastructure is essential.  We recommend each group uses a **Git repository** as a central collaboration space.  The repository should host:
+All groups work in a **single shared Git repository**.  Each group has its own subdirectory under `groups/` where all deliverables are committed.  This makes it easy for the instructor and your peers to review, compare and evaluate everyone’s work in one place.
+
+Your group directory should contain:
 
 - **README.md** with an overview, setup instructions, and dependencies.
-- **Slides** (PowerPoint or PDF) in a `/slides` directory.
-- **Demo code** in a `/demo` directory, containing Dockerfiles, scripts and notebooks.
-- **Data** sets or links in a `/data` directory.
-- **Notebooks** (optional) in a `/notebooks` directory for interactive experiments.
-- **Reports** or supplementary documents in a `/docs` directory.
+- **Slides** (PowerPoint or PDF) in a `slides/` directory.
+- **Demo code** in a `demo/` directory, containing Dockerfiles, scripts and source code.
+- **Data** sets or links in a `data/` directory.
+- **Notebooks** (optional) in a `notebooks/` directory for interactive experiments.
 
-GitLab is a great option as it’s built‑in CI/CD can be used to build Docker images or run unit tests.  GitLab Pages allows groups to host their slides or demo dashboards.  Groups are recommended to use issues and milestones to track tasks and ensure collaboration.  For coding, you can use Jupyter notebooks locally or in simple cloud services (e.g., free tiers of [Google Colab](https://colab.research.google.com)) but must upload or link final notebooks into the repository.
+Use issues and milestones to track tasks and coordinate within your group.  For coding, you can use Jupyter notebooks locally or in simple cloud services (e.g., free tiers of [Google Colab](https://colab.research.google.com)) but must upload or link final notebooks into the repository.
 
-## 9. Recommended Git Repository Structure
+## 9. Group Directory Structure
+
+Each group directory follows this layout:
 
 ```
-/README.md        – overview, objectives, setup, instructions
-/slides/          – presentation files (PDF/PPTX)
-/demo/
-    Dockerfile    – defines environment
-    run_demo.sh   – script to start services
-    app/          – source code for demo application or queries
-/data/            – sample datasets (or scripts to download them)
-/notebooks/       – Jupyter notebooks used in preparation or demonstration
-/docs/            – additional papers, reports or architecture diagrams
-/LICENSE          – open‑source license for the repository
+groups/group1-graph-databases/
+    README.md       – overview, objectives, setup instructions
+    slides/         – presentation files (PDF/PPTX)
+    demo/
+        Dockerfile  – defines environment
+        run_demo.sh – script to start services
+        app/        – source code for demo application or queries
+    data/           – sample datasets (or scripts to download them)
+    notebooks/      – Jupyter notebooks used in preparation or demonstration
 ```
 
 This structure keeps materials organized and makes it easy for the instructor and your peers to evaluate your work.
@@ -141,7 +143,7 @@ This structure keeps materials organized and makes it easy for the instructor an
 5. **Demo development** – Build a small application or notebook demonstrating the practical benefits of the data model.  Test performance and prepare visualizations.
 6. **Prepare slides** – Create an engaging presentation covering conceptual and practical aspects.  Integrate diagrams, charts and code snippets.  Practice explaining queries and answering questions.
 7. **Interactive activity design** – Develop exercise materials for your classmates and prepare instructions.  Ensure that needed software is accessible to participants.
-8. **Repository completion** – Commit all materials to your repository following the recommended structure.  Include instructions in `README.md` for reproducing the demo.
+8. **Repository completion** – Commit all materials to your group directory following the recommended structure.  Include instructions in your `README.md` for reproducing the demo.
 9. **Presentation** – Deliver the lecture including the demo live, facilitate the activity, and answer questions.
 10. **Reflection** – After the lecture, write a short reflection (1–2 pages) on what you learned, challenges you faced, and how the data model can be applied in the real world.
 

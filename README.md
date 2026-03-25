@@ -4,20 +4,43 @@ This repository contains materials for the **Advanced Data Models** lecture (SS2
 
 ## Repository structure
 
-- `report.md` – Detailed course design describing philosophy, semester plan, seminar topics, recommended readings, demo ideas, lecture template, interactive activities, infrastructure recommendations, and grading rubric.  
-- `slides/` – Student groups should place their seminar slide decks here.
-- `demo/` – Sample demonstration code and notebooks.
-- `data/` – Small datasets used for demonstrations.
-- `notebooks/` – Jupyter notebooks or code used in demos.
+- `report.md` – Detailed course design describing philosophy, semester plan, seminar topics, recommended readings, demo ideas, lecture template, interactive activities, infrastructure recommendations, and grading rubric.
+- `docs/` – Additional papers, reports or architecture diagrams.
+- `groups/` – One subdirectory per group containing all deliverables (see below).
 
-Each directory contains a placeholder `README.md` file explaining its purpose.  Groups should create subfolders as needed, commit their materials, and explain any dependencies or setup steps.
+### Group directories
+
+Each group works inside its own subdirectory under `groups/`:
+
+```
+groups/
+  group1-graph-databases/
+  group2-triple-stores/
+  group3-vector-databases/
+  group4-document-stores/
+  group5-key-value-stores/
+  group6-wide-column-databases/
+  group7-data-lakes/
+```
+
+Every group directory follows the same internal structure:
+
+```
+README.md       – overview, setup instructions, dependencies
+slides/         – presentation files (PDF/PPTX)
+demo/           – source code, Dockerfiles, scripts
+data/           – sample datasets (or scripts to download them)
+notebooks/      – Jupyter notebooks used in preparation or demonstration
+```
+
+Each group directory contains placeholder `README.md` files explaining its purpose.  Add further subdirectories as needed.
 
 ## Guidelines for students
 
 - Form groups of 2‑3 students and select a topic (graph databases, triple stores, vector databases, document stores, key‑value stores, wide‑column stores or data lakes).
-- Deeply study the assigned paper or chapter, prepare a 90‑minute seminar using the lecture template provided in `report.md`, and design an interactive activity and practical demo.
+- Deeply study the assigned paper or chapter, prepare your lecture using the template provided in `report.md`, and design an interactive activity and practical demo.
 - Use open‑source or free‑tier tools that run on student laptops (e.g. Neo4j, Apache Jena, Milvus, MongoDB, Redis, Cassandra, Delta Lake).  Docker setup is encouraged.
 - AI coding assistants (ChatGPT, Codex, Claude) may be used to accelerate code development, but every student must understand and be able to explain what their code does.
-- Commit your slides, demo scripts, and any data to this repository and be prepared to explain your design decisions during your lecture.
+- Commit all your materials (slides, demo scripts, data, notebooks) to your group directory in this repository and be prepared to explain your design decisions during your lecture.
 
 For full course philosophy, semester schedule, suggested readings, demo ideas and evaluation rubric, please consult `report.md`.
