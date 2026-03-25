@@ -16,7 +16,7 @@ Each directory contains a placeholder `README.md` file explaining its purpose.  
 
 - Form groups of 2‑3 students and select a topic (graph databases, triple stores, vector databases, document stores, key‑value stores, wide‑column stores or data lakes).
 - Deeply study the assigned paper or chapter, prepare a 90‑minute seminar using the lecture template provided in `report.md`, and design an interactive activity and practical demo.
-- Use open‑source or free‑tier tools that run on student laptops (e.g. Neo4j, Apache Jena, Milvus, MongoDB, Redis, Cassandra, Apache Iceberg).  Docker setup is encouraged.
+- Use open‑source or free‑tier tools that run on student laptops (e.g. Neo4j, Apache Jena, Milvus, MongoDB, Redis, Cassandra, Delta Lake).  Docker setup is encouraged.
 - AI coding assistants (ChatGPT, Codex, Claude) may be used to accelerate code development, but every student must understand and be able to explain what their code does.
 - Commit your slides, demo scripts, and any data to this repository and be prepared to explain your design decisions during your lecture.
 
