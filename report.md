@@ -90,17 +90,27 @@ Each lecture session is 180 minutes.  The structured content below totals appro
 
 ## 7. Interactive Activities
 
-To maintain a **student‑driven lecture**, each group should plan at least one interactive activity.  Suggestions include:
+To maintain a **student‑driven lecture**, each group should plan at least one interactive activity that fits within the 20‑minute slot.  Below are suggestions organised by type; pick or combine what works best for your topic.
 
-- **Live query writing** – Provide classmates with a query prompt and have them write and run queries on the demo database (e.g., find shortest path between two nodes in Neo4j, craft a SPARQL query to extract a subgraph).
+### Hands‑on (classmates work directly with data or queries)
 
-- **Schema design exercise** – Give a small use‑case (e.g., product catalog) and ask participants to design a document structure or column family.  Discuss the pros and cons of different designs.
+- **Live query challenge** – Prepare 2–3 query prompts of increasing difficulty and let classmates write and run them against your demo database.  Examples: *find the shortest path between two actors* (graph), *retrieve all German universities and their alumni* (SPARQL), *find the five most similar documents to a given sentence* (vector), *query sensor readings for the last hour* (wide‑column).
 
-- **Architecture discussion** – Present two deployment scenarios (single node vs. multi‑node) and ask your classmates to evaluate scalability and fault tolerance; simulate node failures where possible.
+- **Schema design exercise** – Present a short use‑case (e.g., a movie recommendation app or an IoT dashboard) and ask pairs of classmates to sketch a data model for it using your database's concepts.  Compare designs on the board and discuss trade‑offs (denormalisation, nesting depth, partition key choice, embedding strategy).
 
-- **Model comparison debate** – Divide participants into two teams to argue for or against using a specific data model in a given AI scenario (e.g., vector database vs. knowledge graph for semantic search).  Use evidence from the reading material and demos.
+- **Break‑it session** – Give classmates a working query or schema and ask them to identify what would go wrong at scale, with dirty data, or under a different access pattern.  For example: *"This Cassandra table uses timestamp as the partition key — what happens after a year of sensor data?"*
 
-- **Small group challenge** – Assign mini‑projects where groups design a micro‑service using the presented data model, write a simple API and benchmark queries.
+### Discussion & debate (classmates argue positions with evidence)
+
+- **Model face‑off** – Frame a realistic AI scenario (e.g., *"Your startup needs to build a RAG pipeline — would you store your knowledge base in a triple store or a vector database?"*).  Split the room into two sides, give 5 minutes to prepare arguments, then run a short structured debate.  Wrap up with what a real system might combine.
+
+- **When would you NOT use this?** – After presenting the strengths of your data model, ask classmates to brainstorm scenarios where it would be the *wrong* choice.  This forces critical thinking about trade‑offs rather than just feature lists.
+
+### AI connection (tie the data model to an AI workflow)
+
+- **Pipeline sketch** – Ask classmates to draw a simple AI pipeline (e.g., RAG, recommendation, fraud detection) and mark where your data model fits in.  Discuss what other data models would handle the remaining components.  This reinforces the course philosophy that real AI systems often combine multiple data models.
+
+Each group should prepare any needed materials (query prompts, use‑case descriptions, starter schemas) in advance and include them in your group directory so classmates can follow along.
 
 ## 8. Infrastructure & Group Directory Structure
 
