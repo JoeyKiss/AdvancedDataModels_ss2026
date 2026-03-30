@@ -2,7 +2,8 @@
 
 ## Group Members
 
-- (add your names here)
+- Vincent Lahm
+- Roman Lahm
 
 ## Overview
 
