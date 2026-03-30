@@ -2,7 +2,7 @@
 
 ## Group Members
 
-- (add your names here)
+- Dominik
 
 ## Overview
 
