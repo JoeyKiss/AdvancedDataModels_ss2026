@@ -2,7 +2,8 @@
 
 ## Group Members
 
-- (add your names here)
+- Joey Kiss
+- Tim Bauer
 
 ## Overview
 
