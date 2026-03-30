@@ -2,7 +2,8 @@
 
 ## Group Members
 
-- (add your names here)
+- Ilyas Tachakor
+- Nick Albrech
 
 ## Overview
 
