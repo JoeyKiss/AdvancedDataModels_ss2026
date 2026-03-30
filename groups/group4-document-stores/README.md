@@ -2,7 +2,8 @@
 
 ## Group Members
 
-- (add your names here)
+- Luca Raichle
+- Lars Wieck
 
 ## Overview
 
